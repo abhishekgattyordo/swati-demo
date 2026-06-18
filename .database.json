@@ -1,0 +1,562 @@
+{
+  "beds": [
+    {
+      "id": "B1",
+      "roomNumber": "ICU-101",
+      "ward": "ICU",
+      "bedNumber": "A",
+      "status": "Occupied",
+      "occupiedByPatientId": "P1",
+      "occupiedByPatientName": "Vikram Sharma"
+    },
+    {
+      "id": "B2",
+      "roomNumber": "ICU-101",
+      "ward": "ICU",
+      "bedNumber": "B",
+      "status": "Available"
+    },
+    {
+      "id": "B3",
+      "roomNumber": "ER-A",
+      "ward": "Emergency",
+      "bedNumber": "1",
+      "status": "Occupied",
+      "occupiedByPatientId": "P2",
+      "occupiedByPatientName": "Aylin Patel"
+    },
+    {
+      "id": "B4",
+      "roomNumber": "ER-A",
+      "ward": "Emergency",
+      "bedNumber": "2",
+      "status": "Available"
+    },
+    {
+      "id": "B5",
+      "roomNumber": "ER-A",
+      "ward": "Emergency",
+      "bedNumber": "3",
+      "status": "Available"
+    },
+    {
+      "id": "B6",
+      "roomNumber": "ER-B",
+      "ward": "Emergency",
+      "bedNumber": "4",
+      "status": "Available"
+    },
+    {
+      "id": "B7",
+      "roomNumber": "GW-201",
+      "ward": "General Ward",
+      "bedNumber": "1",
+      "status": "Occupied",
+      "occupiedByPatientId": "P3",
+      "occupiedByPatientName": "Ramesh Rao"
+    },
+    {
+      "id": "B8",
+      "roomNumber": "GW-201",
+      "ward": "General Ward",
+      "bedNumber": "2",
+      "status": "Available"
+    },
+    {
+      "id": "B9",
+      "roomNumber": "GW-202",
+      "ward": "General Ward",
+      "bedNumber": "3",
+      "status": "Available"
+    },
+    {
+      "id": "B10",
+      "roomNumber": "GW-202",
+      "ward": "General Ward",
+      "bedNumber": "4",
+      "status": "Maintenance"
+    },
+    {
+      "id": "B11",
+      "roomNumber": "PED-301",
+      "ward": "Pediatrics",
+      "bedNumber": "A",
+      "status": "Available"
+    },
+    {
+      "id": "B12",
+      "roomNumber": "PED-301",
+      "ward": "Pediatrics",
+      "bedNumber": "B",
+      "status": "Available"
+    }
+  ],
+  "patients": [
+    {
+      "id": "P1",
+      "name": "Vikram Sharma",
+      "age": 54,
+      "gender": "Male",
+      "phoneNumber": "+91 98765 43210",
+      "email": "vikram.sharma@email.com",
+      "bloodType": "O+",
+      "history": "Chronic Hypertension, Mild T2D",
+      "currentStatus": "Admitted",
+      "bedId": "B1",
+      "allergies": [
+        "Penicillin"
+      ]
+    },
+    {
+      "id": "P2",
+      "name": "Aylin Patel",
+      "age": 29,
+      "gender": "Female",
+      "phoneNumber": "+91 87654 32109",
+      "email": "aylin.patel@email.com",
+      "bloodType": "AB-",
+      "history": "None",
+      "currentStatus": "Admitted",
+      "bedId": "B3",
+      "allergies": [
+        "Sulfonamides"
+      ],
+      "roundsLog": [
+        {
+          "id": "RND1049",
+          "progressNotes": "New onset of localized deep calf tenderness in the right lower extremity. Guarded for possible thrombotic incidents (DVT).",
+          "treatmentPlans": "Suspend all anticoagulation therapies until vascular integrity is verified. Request urgent bedside bilateral lower limb Doppler ultrasound scans.",
+          "nursingInstructions": "Observe limb elevation. Keep the right leg elevated. Do not massage or put pressure on the calf. Coordinate with imaging ward for urgent bedside diagnostics.",
+          "roundsRecordedBy": "Dr. Ananya Goel",
+          "timestamp": "2026-06-18T06:52:09.782Z"
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "name": "Ramesh Rao",
+      "age": 62,
+      "gender": "Male",
+      "phoneNumber": "+91 76543 21098",
+      "email": "ramesh.rao@email.com",
+      "bloodType": "A+",
+      "history": "CABG in 2021",
+      "currentStatus": "Admitted",
+      "bedId": "B7",
+      "allergies": []
+    },
+    {
+      "id": "P4",
+      "name": "Siddharth Verma",
+      "age": 34,
+      "gender": "Male",
+      "phoneNumber": "+91 65432 10987",
+      "email": "siddharth@gmail.com",
+      "bloodType": "B+",
+      "history": "Asthma",
+      "currentStatus": "Outpatient",
+      "allergies": [
+        "Dust"
+      ]
+    }
+  ],
+  "appointments": [
+    {
+      "id": "A1",
+      "patientName": "Siddharth Verma",
+      "patientEmail": "siddharth@gmail.com",
+      "patientPhone": "6543210987",
+      "department": "General Medicine",
+      "doctorName": "Dr. Ananya Goel",
+      "date": "2026-06-20",
+      "time": "10:30 AM",
+      "reason": "Severe pollen allergies causing short of breath",
+      "status": "Scheduled",
+      "mode": "Teleconsultation"
+    },
+    {
+      "id": "A2",
+      "patientName": "Preeti Singh",
+      "patientEmail": "preeti.singh@email.com",
+      "patientPhone": "9001122334",
+      "department": "Cardiology",
+      "doctorName": "Dr. Vivek Murthy",
+      "date": "2026-06-21",
+      "time": "02:00 PM",
+      "reason": "Follow-up post stable angina assessment",
+      "status": "Scheduled",
+      "mode": "Physical"
+    },
+    {
+      "id": "A3",
+      "patientName": "Aarav Mehta",
+      "patientEmail": "aarav.mehta@email.com",
+      "patientPhone": "9555122334",
+      "department": "Pediatric Care",
+      "doctorName": "Dr. Sarah D'Souza",
+      "date": "2026-06-22",
+      "time": "11:00 AM",
+      "reason": "High fever and throat inflammation",
+      "status": "Scheduled",
+      "mode": "Physical"
+    }
+  ],
+  "prescriptions": [
+    {
+      "id": "RX1",
+      "patientId": "P1",
+      "patientName": "Vikram Sharma",
+      "medicineName": "Amlodipine Besylate",
+      "dosage": "5mg",
+      "frequency": "Once daily",
+      "instructions": "Morning before breakfast",
+      "prescribedBy": "Dr. Vivek Murthy",
+      "prescribedDate": "2026-06-15",
+      "status": "Dispensed"
+    },
+    {
+      "id": "RX2",
+      "patientId": "P2",
+      "patientName": "Aylin Patel",
+      "medicineName": "Ceftriaxone",
+      "dosage": "1g",
+      "frequency": "Twice daily",
+      "instructions": "IV administration",
+      "prescribedBy": "Dr. Ananya Goel",
+      "prescribedDate": "2026-06-17",
+      "status": "Pending"
+    }
+  ],
+  "labOrders": [
+    {
+      "id": "LAB1",
+      "patientId": "P1",
+      "patientName": "Vikram Sharma",
+      "testName": "HbA1c & Fasting Blue Blood Sugar",
+      "orderedBy": "Dr. Vivek Murthy",
+      "orderedDate": "2026-06-15",
+      "status": "Ready",
+      "result": "HbA1c: 6.8% (Borderline Controlled), Fasting Sugar: 124 mg/dL."
+    },
+    {
+      "id": "LAB2",
+      "patientId": "P2",
+      "patientName": "Aylin Patel",
+      "testName": "Complete Blood Count & Dengue Serology",
+      "orderedBy": "Dr. Ananya Goel",
+      "orderedDate": "2026-06-17",
+      "status": "Processing"
+    },
+    {
+      "id": "LAB3",
+      "patientId": "P3",
+      "patientName": "Ramesh Rao",
+      "testName": "Serum Electrolytes & Lipid Profile",
+      "orderedBy": "Dr. Vivek Murthy",
+      "orderedDate": "2026-06-17",
+      "status": "Ordered"
+    },
+    {
+      "id": "LAB41",
+      "patientId": "P2",
+      "patientName": "Aylin Patel",
+      "testName": "STAT Doppler Ultrasound (Lower Limbs Venous)",
+      "orderedBy": "Dr. Ananya Goel",
+      "orderedDate": "2026-06-18",
+      "status": "Ordered"
+    }
+  ],
+  "bills": [
+    {
+      "id": "BLL1",
+      "patientId": "P1",
+      "patientName": "Vikram Sharma",
+      "consultationCharges": 1500,
+      "labCharges": 800,
+      "pharmacyCharges": 1200,
+      "roomCharges": 5000,
+      "discount": 500,
+      "total": 8000,
+      "status": "Unpaid"
+    },
+    {
+      "id": "BLL2",
+      "patientId": "P3",
+      "patientName": "Ramesh Rao",
+      "consultationCharges": 1500,
+      "labCharges": 0,
+      "pharmacyCharges": 400,
+      "roomCharges": 2500,
+      "discount": 0,
+      "total": 2900,
+      "status": "Paid",
+      "paymentDate": "2026-06-16"
+    }
+  ],
+  "scribeSessions": [
+    {
+      "id": "S81",
+      "patientName": "Ramesh Rao",
+      "rawText": "Toddler has a sudden high fever peaking 103 Fahrenheit last night. Frequent dry cough, refusal to swallow, red pharynx observed in exam. Respiratory rate is 24 per minute. Suspecting streptococcal pharyngitis. Recommend liquid paracetamol.",
+      "soapNotes": {
+        "subjective": "Patient presents with acute upper respiratory tract symptoms, including cough congestion. Detail: \"Toddler has a sudden high fever peaking 103 Fahrenheit last night. Frequent dry cough, refusal to swallow, red pharynx observed in exam. Respiratory rate is 24 per minute. Suspecting streptococcal pharyngitis. Recommend liquid paracetamol.\"",
+        "objective": "Temperature: 98.6°F, HR: 80 bpm, BP: 120/80 mmHg. Lungs clear on physical assessment.",
+        "assessment": "Acute Viral Upper Respiratory Tract Infection (URTI) with secondary pharyngeal local inflammation.",
+        "plan": "1. Supportive therapy with ample oral rehydration. 2. Periodic monitoring of body metrics. 3. Immediate professional physician follow-up if respiratory rate rises."
+      },
+      "icdCodes": [
+        {
+          "code": "J06.9",
+          "description": "Acute upper respiratory infection, unspecified"
+        },
+        {
+          "code": "R05",
+          "description": "Cough"
+        }
+      ],
+      "medications": [
+        {
+          "name": "Levosalbutamol Cough Expectorant",
+          "dosage": "5ml",
+          "frequency": "Thrice daily",
+          "duration": "5 days"
+        },
+        {
+          "name": "Vitamin C Supplement",
+          "dosage": "500mg",
+          "frequency": "Once daily",
+          "duration": "7 days"
+        }
+      ],
+      "timestamp": "2026-06-18T06:51:53.532Z"
+    },
+    {
+      "id": "S73",
+      "patientName": "Vikram Sharma",
+      "rawText": "Toddler has a sudden high fever peaking 103 Fahrenheit last night. Frequent dry cough, refusal to swallow, red pharynx observed in exam. Respiratory rate is 24 per minute. Suspecting streptococcal pharyngitis. Recommend liquid paracetamol.",
+      "soapNotes": {
+        "subjective": "Patient presents with acute upper respiratory tract symptoms, including cough congestion. Detail: \"Toddler has a sudden high fever peaking 103 Fahrenheit last night. Frequent dry cough, refusal to swallow, red pharynx observed in exam. Respiratory rate is 24 per minute. Suspecting streptococcal pharyngitis. Recommend liquid paracetamol.\"",
+        "objective": "Temperature: 98.6°F, HR: 80 bpm, BP: 120/80 mmHg. Lungs clear on physical assessment.",
+        "assessment": "Acute Viral Upper Respiratory Tract Infection (URTI) with secondary pharyngeal local inflammation.",
+        "plan": "1. Supportive therapy with ample oral rehydration. 2. Periodic monitoring of body metrics. 3. Immediate professional physician follow-up if respiratory rate rises."
+      },
+      "icdCodes": [
+        {
+          "code": "J06.9",
+          "description": "Acute upper respiratory infection, unspecified"
+        },
+        {
+          "code": "R05",
+          "description": "Cough"
+        }
+      ],
+      "medications": [
+        {
+          "name": "Levosalbutamol Cough Expectorant",
+          "dosage": "5ml",
+          "frequency": "Thrice daily",
+          "duration": "5 days"
+        },
+        {
+          "name": "Vitamin C Supplement",
+          "dosage": "500mg",
+          "frequency": "Once daily",
+          "duration": "7 days"
+        }
+      ],
+      "timestamp": "2026-06-18T06:51:46.587Z"
+    },
+    {
+      "id": "S62",
+      "patientName": "Vikram Sharma",
+      "rawText": "Toddler has a sudden high fever peaking 103 Fahrenheit last night. Frequent dry cough, refusal to swallow, red pharynx observed in exam. Respiratory rate is 24 per minute. Suspecting streptococcal pharyngitis. Recommend liquid paracetamol.",
+      "soapNotes": {
+        "subjective": "Patient presents with acute upper respiratory tract symptoms, including cough congestion. Detail: \"Toddler has a sudden high fever peaking 103 Fahrenheit last night. Frequent dry cough, refusal to swallow, red pharynx observed in exam. Respiratory rate is 24 per minute. Suspecting streptococcal pharyngitis. Recommend liquid paracetamol.\"",
+        "objective": "Temperature: 98.6°F, HR: 80 bpm, BP: 120/80 mmHg. Lungs clear on physical assessment.",
+        "assessment": "Acute Viral Upper Respiratory Tract Infection (URTI) with secondary pharyngeal local inflammation.",
+        "plan": "1. Supportive therapy with ample oral rehydration. 2. Periodic monitoring of body metrics. 3. Immediate professional physician follow-up if respiratory rate rises."
+      },
+      "icdCodes": [
+        {
+          "code": "J06.9",
+          "description": "Acute upper respiratory infection, unspecified"
+        },
+        {
+          "code": "R05",
+          "description": "Cough"
+        }
+      ],
+      "medications": [
+        {
+          "name": "Levosalbutamol Cough Expectorant",
+          "dosage": "5ml",
+          "frequency": "Thrice daily",
+          "duration": "5 days"
+        },
+        {
+          "name": "Vitamin C Supplement",
+          "dosage": "500mg",
+          "frequency": "Once daily",
+          "duration": "7 days"
+        }
+      ],
+      "timestamp": "2026-06-18T06:50:36.097Z"
+    },
+    {
+      "id": "S56",
+      "patientName": "Vikram Sharma",
+      "rawText": "Patient reports severe chest tightness with high-pitch audible expiratory wheezing since yesterday. Dust exposure triggered. Using inhaler 4 times without stable relief. Oxygen Saturation checked at 91% on room air. Needs corticosteroids and urgent nebulization.",
+      "soapNotes": {
+        "subjective": "Patient reports chest pain or localized muscular tightness in the thoracic area. Patient reports severe chest tightness with high-pitch audible expiratory wheezing since yesterday. Dust exposure triggered. Using inhaler 4 times without stable relief. Oxygen Saturation checked at 91% on room air. Needs corticosteroids and urgent nebulization.",
+        "objective": "Temperature: 98.6°F, HR: 80 bpm, BP: 120/80 mmHg. Lungs clear on physical assessment.",
+        "assessment": "Suspected Intercostal Myalgia versus localized Pleuritis. Low initial clinical projection for primary cardiac event.",
+        "plan": "1. Supportive therapy with ample oral rehydration. 2. Periodic monitoring of body metrics. 3. Immediate professional physician follow-up if respiratory rate rises."
+      },
+      "icdCodes": [
+        {
+          "code": "R07.89",
+          "description": "Other chest pain / Musculoskeletal chest pain"
+        },
+        {
+          "code": "M79.1",
+          "description": "Myalgia"
+        }
+      ],
+      "medications": [
+        {
+          "name": "Naproxen/NSAID",
+          "dosage": "250mg",
+          "frequency": "Twice daily after food",
+          "duration": "5 days"
+        }
+      ],
+      "timestamp": "2026-06-18T06:50:21.222Z"
+    },
+    {
+      "id": "S47",
+      "patientName": "Aylin Patel",
+      "rawText": "Patient reports severe chest tightness with high-pitch audible expiratory wheezing since yesterday. Dust exposure triggered. Using inhaler 4 times without stable relief. Oxygen Saturation checked at 91% on room air. Needs corticosteroids and urgent nebulization.",
+      "soapNotes": {
+        "subjective": "Patient reports chest pain or localized muscular tightness in the thoracic area. Patient reports severe chest tightness with high-pitch audible expiratory wheezing since yesterday. Dust exposure triggered. Using inhaler 4 times without stable relief. Oxygen Saturation checked at 91% on room air. Needs corticosteroids and urgent nebulization.",
+        "objective": "Temperature: 98.6°F, HR: 80 bpm, BP: 120/80 mmHg. Lungs clear on physical assessment.",
+        "assessment": "Suspected Intercostal Myalgia versus localized Pleuritis. Low initial clinical projection for primary cardiac event.",
+        "plan": "1. Supportive therapy with ample oral rehydration. 2. Periodic monitoring of body metrics. 3. Immediate professional physician follow-up if respiratory rate rises."
+      },
+      "icdCodes": [
+        {
+          "code": "R07.89",
+          "description": "Other chest pain / Musculoskeletal chest pain"
+        },
+        {
+          "code": "M79.1",
+          "description": "Myalgia"
+        }
+      ],
+      "medications": [
+        {
+          "name": "Naproxen/NSAID",
+          "dosage": "250mg",
+          "frequency": "Twice daily after food",
+          "duration": "5 days"
+        }
+      ],
+      "timestamp": "2026-06-18T06:46:57.257Z"
+    },
+    {
+      "id": "S33",
+      "patientName": "Aylin Patel",
+      "rawText": "Patient reports severe chest tightness with high-pitch audible expiratory wheezing since yesterday. Dust exposure triggered. Using inhaler 4 times without stable relief. Oxygen Saturation checked at 91% on room air. Needs corticosteroids and urgent nebulization.",
+      "soapNotes": {
+        "subjective": "Patient reports chest pain or localized muscular tightness in the thoracic area. Patient reports severe chest tightness with high-pitch audible expiratory wheezing since yesterday. Dust exposure triggered. Using inhaler 4 times without stable relief. Oxygen Saturation checked at 91% on room air. Needs corticosteroids and urgent nebulization.",
+        "objective": "Temperature: 98.6°F, HR: 80 bpm, BP: 120/80 mmHg. Lungs clear on physical assessment.",
+        "assessment": "Suspected Intercostal Myalgia versus localized Pleuritis. Low initial clinical projection for primary cardiac event.",
+        "plan": "1. Supportive therapy with ample oral rehydration. 2. Periodic monitoring of body metrics. 3. Immediate professional physician follow-up if respiratory rate rises."
+      },
+      "icdCodes": [
+        {
+          "code": "R07.89",
+          "description": "Other chest pain / Musculoskeletal chest pain"
+        },
+        {
+          "code": "M79.1",
+          "description": "Myalgia"
+        }
+      ],
+      "medications": [
+        {
+          "name": "Naproxen/NSAID",
+          "dosage": "250mg",
+          "frequency": "Twice daily after food",
+          "duration": "5 days"
+        }
+      ],
+      "timestamp": "2026-06-18T06:46:44.530Z"
+    },
+    {
+      "id": "S23",
+      "patientName": "Vikram Sharma",
+      "rawText": "Toddler has a sudden high fever peaking 103 Fahrenheit last night. Frequent dry cough, refusal to swallow, red pharynx observed in exam. Respiratory rate is 24 per minute. Suspecting streptococcal pharyngitis. Recommend liquid paracetamol.",
+      "soapNotes": {
+        "subjective": "Patient presents with acute upper respiratory tract symptoms, including cough congestion. Detail: \"Toddler has a sudden high fever peaking 103 Fahrenheit last night. Frequent dry cough, refusal to swallow, red pharynx observed in exam. Respiratory rate is 24 per minute. Suspecting streptococcal pharyngitis. Recommend liquid paracetamol.\"",
+        "objective": "Temperature: 98.6°F, HR: 80 bpm, BP: 120/80 mmHg. Lungs clear on physical assessment.",
+        "assessment": "Acute Viral Upper Respiratory Tract Infection (URTI) with secondary pharyngeal local inflammation.",
+        "plan": "1. Supportive therapy with ample oral rehydration. 2. Periodic monitoring of body metrics. 3. Immediate professional physician follow-up if respiratory rate rises."
+      },
+      "icdCodes": [
+        {
+          "code": "J06.9",
+          "description": "Acute upper respiratory infection, unspecified"
+        },
+        {
+          "code": "R05",
+          "description": "Cough"
+        }
+      ],
+      "medications": [
+        {
+          "name": "Levosalbutamol Cough Expectorant",
+          "dosage": "5ml",
+          "frequency": "Thrice daily",
+          "duration": "5 days"
+        },
+        {
+          "name": "Vitamin C Supplement",
+          "dosage": "500mg",
+          "frequency": "Once daily",
+          "duration": "7 days"
+        }
+      ],
+      "timestamp": "2026-06-18T06:46:35.087Z"
+    },
+    {
+      "id": "S1",
+      "patientName": "Siddharth Verma",
+      "rawText": "Patient complains of chest pain on the right side. Onset yesterday afternoon. Hurts when inhaling deeply. Non-productive cough. Vitals stable. O2 sat 98%. No leg swelling. Heart rate 74, BP 122/80.",
+      "timestamp": "2026-06-17T14:30:00Z",
+      "soapNotes": {
+        "subjective": "Siddharth complains of right-sided chest pain starting yesterday afternoon. Exacerbated by deep inspiration. Accompanied by dry, non-productive cough. Denies shortness of breath at rest, fever, or chills.",
+        "objective": "O2 saturation 98% on room air. Vitals stable: HR 74 bpm, Blood Pressure 122/80 mmHg. Lungs sound clear bilaterally on auscultation. No peripheral edema or swelling in extremities.",
+        "assessment": "Inspiratory chest wall pain, suspecting localized pleuritis or musculoskeletal strain. Low risk for acute coronary syndrome given clinical picture and age.",
+        "plan": "1. Advise Ibuprofen 400mg twice daily with meals for inflammation. 2. Rest, avoid strenuous lifting for 3 days. 3. Return immediately if pain worsens, radiates, or shortness of breath develops."
+      },
+      "icdCodes": [
+        {
+          "code": "R07.1",
+          "description": "Chest pain on breathing / Pleuritic chest pain"
+        },
+        {
+          "code": "M79.12",
+          "description": "Myalgia of the thoracic region"
+        }
+      ],
+      "medications": [
+        {
+          "name": "Ibuprofen",
+          "dosage": "400mg",
+          "frequency": "Twice daily",
+          "duration": "5 days"
+        }
+      ]
+    }
+  ]
+}

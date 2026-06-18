@@ -1,0 +1,10 @@
+{
+  "name": "Swasti.ai - AI Hospital Information System",
+  "description": "An AI-powered Hospital Information System featuring automated scribing, triage assessments, smart bed allocation, ROI analytics, and patient portal portals.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
